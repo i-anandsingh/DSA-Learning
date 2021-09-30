@@ -14,12 +14,6 @@ public:
             }
         }
         
-        int ans = INT_MIN;
-        for(auto &row : dp){
-            for(auto &val : row){
-                ans = max(ans, val);
-            }
-        }
-        return ans;
+        return dp[n][m];
     }
 };
